@@ -1,21 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
+    <title>Twittler</title>
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <header>
+      <h1>Twittler</h1>
+    </header>
+    <div class="container">
+      <div class="main">
+        <div class="tweets"></div>
+      </div>
+      <aside>
+        <div>sharskforcheap</div>
+        <div>douglascalhoun</div>
+        <div>shawndrost</div>
+        <div>mracus</div>
+      </aside>
+    </div>
     <script>
 
       $(document).ready(function(){
-        var $body = $('body');
+        var currentTime = new Date();
+        console.log(currentTime);
+        var $body = $('.tweets');
         $body.html('');
 
         var index = streams.home.length - 1;
         while(index >= 0){
           var tweet = streams.home[index];
           var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
+          $tweet.text('@' + tweet.user + ': ' + tweet.message);// + ' (' + tweet.created_at + ')');
           $tweet.appendTo($body);
           index -= 1;
         }
@@ -23,5 +42,9 @@
       });
 
     </script>
+    </div>
+    <footer>
+      Created by Miike Ramos
+    </footer>
   </body>
 </html>

@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Course";
+  src: url(//d2rwobdpv93es3.cloudfront.net/assets/cs-course-d474584adc1c52dd26118ddf75fde76a.eot);
+  src: url(//d2rwobdpv93es3.cloudfront.net/assets/cs-course.eot?#iefix) format("embedded-opentype"), url(//d2rwobdpv93es3.cloudfront.net/assets/cs-course-ede1a2c9a5de4a1a49d99d7ba66af531.woff) format("woff"), url(//d2rwobdpv93es3.cloudfront.net/assets/cs-course-6d68dc1df2c01b3b906fae42fcfca861.ttf) format("truetype"), url(//d2rwobdpv93es3.cloudfront.net/assets/fonts/cs-course.svg#cs-course) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* YWFT Processing - http://www.youworkforthem.com/product.php?sku=T0024 */
+@font-face {
+  font-family: "YWFTProcessing";
+  src: url(//d2rwobdpv93es3.cloudfront.net/assets/ywft-processing-bold-8d2b607e6a90114d48b4b8ba73edb06c.eot);
+  src: url(//d2rwobdpv93es3.cloudfront.net/assets/ywft-processing-bold.eot?#iefix) format("embedded-opentype"), url(//d2rwobdpv93es3.cloudfront.net/assets/ywft-processing-bold-d792bd3ff092f4c71dc2ca4eafb5d9cf.woff) format("woff"), url(//d2rwobdpv93es3.cloudfront.net/assets/ywft-processing-bold-f5aba52a8dbe93487576bec303c8b46c.ttf) format("truetype"), url(//d2rwobdpv93es3.cloudfront.net/assets/ywft-processing-bold.svg#SilkscreenNormal) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* PTSans - From Font Squirrel (http://www.fontsquirrel.com) */
+@font-face {
+  font-family: "PTSansRegular";
+  src: url(//d2rwobdpv93es3.cloudfront.net/assets/PTS55F-webfont-3cc5a9320132671edfba57cd404cd1d8.eot);
+  src: url(//d2rwobdpv93es3.cloudfront.net/assets/PTS55F-webfont.eot?#iefix) format("embedded-opentype"), url(//d2rwobdpv93es3.cloudfront.net/assets/PTS55F-webfont-461d15d035b35f59577cb4ee0a49fc8b.woff) format("woff"), url(//d2rwobdpv93es3.cloudfront.net/assets/PTS55F-webfont-2c76e073c8b5d639d97d2d2affd5c00c.ttf) format("truetype"), url(//d2rwobdpv93es3.cloudfront.net/assets/PTS55F-webfont.svg#PTSansRegular) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font: 12px "PTSansRegular", "Helvetica Neue", Arial, sans-serif;
+  background: url(img/sea.svg) fixed;
+  color: #fff;
+  min-height: 100%;
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, footer, header, nav {
+  display: block;
+}
+
+header {
+  height: 150px;
+  background: url(img/ground) 0 110px repeat-x,
+              url(img/sky.svg);
+}
+
+aside {
+  width: 100px;
+  height: 1000px;
+  float: right;
+  background: gold;
+}
+
+footer {
+  clear: both;
+  height: 150px;
+  text-align: center;
+  font: bold 20px "YWFTProcessing", sans-serif;
+  color: #000;
+  text-shadow: 1px 1px 1px #fff;
+}
+
+h1 {
+  margin: 0;
+  padding: 45px;
+  font: bold 52px "YWFTProcessing", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 1px 1px 1px #333;
+}
+
+.container {
+  margin: 0 auto;
+  width: 700px;
+}
+
+.main {
+  width: 500px;
+  float: left;
+  background: aqua;
+}
