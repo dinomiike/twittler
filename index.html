@@ -14,6 +14,9 @@
     <div class="container">
       <div class="main">
         <div class="tweets"></div>
+        <div class="more">
+          <button>More Tweets</button>
+        </div>
       </div>
       <aside>
         <div>sharskforcheap</div>
@@ -25,26 +28,32 @@
     <script>
 
       $(document).ready(function(){
-        var currentTime = new Date();
-        console.log(currentTime);
-        var $body = $('.tweets');
-        $body.html('');
+        var grabTweets = function () {
+          var $body = $('.tweets');
+          $body.html('');
 
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);// + ' (' + tweet.created_at + ')');
-          $tweet.appendTo($body);
-          index -= 1;
-        }
+          var index = streams.home.length - 1;
+          while(index >= 0){
+            var tweet = streams.home[index];
+            var $tweet = $('<div class="tweet"></div>');
+            $tweet.text('@' + tweet.user + ': ' + tweet.message);// + ' (' + tweet.created_at + ')');
+            $tweet.appendTo($body);
+            index -= 1;
+          }
+        };
 
+        grabTweets();
+
+        var $button = $("button");
+        $button.on("click", function () {
+          grabTweets();
+        });
       });
 
     </script>
     </div>
     <footer>
-      Created by Miike Ramos
+      Made with <i class="icon-heart"></i> by Miike Ramos at <a href="http://hackreactor.com">Hack Reactor</a>
     </footer>
   </body>
 </html>
