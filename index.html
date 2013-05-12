@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Twittler</title>
-    <script src="jquery.js"></script>
-    <script src="data_generator.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -18,42 +16,16 @@
           <button>More Tweets</button>
         </div>
       </div>
-      <aside>
-        <div>sharskforcheap</div>
-        <div>douglascalhoun</div>
-        <div>shawndrost</div>
-        <div>mracus</div>
-      </aside>
-    </div>
-    <script>
-
-      $(document).ready(function(){
-        var grabTweets = function () {
-          var $body = $('.tweets');
-          $body.html('');
-
-          var index = streams.home.length - 1;
-          while(index >= 0){
-            var tweet = streams.home[index];
-            var $tweet = $('<div class="tweet"></div>');
-            $tweet.text('@' + tweet.user + ': ' + tweet.message);// + ' (' + tweet.created_at + ')');
-            $tweet.appendTo($body);
-            index -= 1;
-          }
-        };
-
-        grabTweets();
-
-        var $button = $("button");
-        $button.on("click", function () {
-          grabTweets();
-        });
-      });
-
-    </script>
+      <aside></aside>
+      </div>
     </div>
     <footer>
-      Made with <i class="icon-heart"></i> by Miike Ramos at <a href="http://hackreactor.com">Hack Reactor</a>
+      <div>Made with <i class="icon-heart"></i></div>
+      <div>by Miike Ramos</div>
+      <div>at <a href="http://hackreactor.com">Hack Reactor</a></div>
     </footer>
   </body>
+  <script src="jquery.js"></script>
+  <script src="data_generator.js"></script>
+  <script src="twittler.js"></script>
 </html>
