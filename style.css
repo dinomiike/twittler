@@ -98,6 +98,7 @@ button {
   margin-top: 0.66667em;
   padding: 0.4em 0 0.333333em;
   color: #fff;
+  cursor: pointer;
 }
 
 ul {
@@ -138,6 +139,15 @@ li a:hover {
   border: none;
 }
 
+.tweet em {
+  display: block;
+  padding-top: 3px;
+  font-style: normal;
+  font-size: 11px;
+  text-align: right;
+  color: #ccc;
+}
+
 .icon-heart {
   position: relative;
   display: inline-block;
@@ -147,7 +157,4 @@ li a:hover {
   background-image: url(img/heart.gif);
 }
 
-/*.icon-heart:before {
-  content: "\f004";
-}*/
 
